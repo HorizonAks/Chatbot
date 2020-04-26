@@ -124,7 +124,7 @@ public class app1 extends javax.swing.JFrame {
            try
     {
        
-        DriverManager.getConnection("jdbc:mysql://localhost:3306/chatbot?autoReconnect=true&useSSL=false","root","toor");
+        DriverManager.getConnection("jdbc:mysql://localhost:3306/chatbot?autoReconnect=true&useSSL=false","USERNAMEdb","PASSWORDdb");
         Statement stmt2 = (Statement) con.createStatement();
         String query2 = "INSERT INTO dnexist VALUES('" +instat+ "')" ;
         stmt2.executeUpdate(query2);
